@@ -8,6 +8,9 @@ import { HistoryPageComponent } from './history-page/history-page.component';
 import { PlanningPageComponent } from './planning-page/planning-page.component';
 import { RecordsPageComponent } from './records-page/records-page.component';
 import { SystemRoutingModule } from './system-routing.module';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { DropdownDirective } from './shared/directives/dropdown.directive';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { SystemRoutingModule } from './system-routing.module';
         BillPageComponent,
         HistoryPageComponent,
         PlanningPageComponent,
-        RecordsPageComponent
+        RecordsPageComponent,
+        SidebarComponent,
+        HeaderComponent,
+        DropdownDirective
     ],
     providers: [],
 })
