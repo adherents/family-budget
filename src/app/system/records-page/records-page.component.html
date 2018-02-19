@@ -10,7 +10,7 @@
 			<fb-add-event></fb-add-event>
 		</div>
 		<div class="col-md-6">
-			<fb-add-category></fb-add-category>
+			<fb-add-category (onCategoryAdd)="newCategoryAdded($event)"></fb-add-category>
 		</div>
 	</div>
 	<div class="row">
