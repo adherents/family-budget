@@ -8,7 +8,7 @@
     }
   ],
   "bill": {
-    "value": 112500,
+    "value": 106200,
     "currency": "RUB"
   },
   "categories": [
@@ -26,11 +26,6 @@
       "id": 3,
       "name": "Машина",
       "amount": 7000
-    },
-    {
-      "name": "Тестовая3",
-      "amount": 250,
-      "id": 4
     }
   ],
   "events": [
@@ -81,6 +76,22 @@
       "date": "23.02.2018 14:41:18",
       "description": "test",
       "id": 6
+    },
+    {
+      "type": "outcome",
+      "amount": 1500,
+      "category": 3,
+      "date": "26.02.2018 13:24:11",
+      "description": "Заправка машины.",
+      "id": 7
+    },
+    {
+      "type": "outcome",
+      "amount": 4800,
+      "category": 3,
+      "date": "26.02.2018 13:26:10",
+      "description": "Мойка машины.",
+      "id": 8
     }
   ]
 }
