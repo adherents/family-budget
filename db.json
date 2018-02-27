@@ -8,7 +8,7 @@
     }
   ],
   "bill": {
-    "value": 106200,
+    "value": 105200,
     "currency": "RUB"
   },
   "categories": [
@@ -92,6 +92,14 @@
       "date": "26.02.2018 13:26:10",
       "description": "Мойка машины.",
       "id": 8
+    },
+    {
+      "type": "outcome",
+      "amount": 1000,
+      "category": 1,
+      "date": "26.02.2018 14:51:09",
+      "description": "Покупка еды.",
+      "id": 9
     }
   ]
 }
