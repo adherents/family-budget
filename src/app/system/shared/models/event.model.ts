@@ -5,6 +5,7 @@ export class FBEvent {
         public category: number,
         public date: string,
         public description: string,
-        public id?: number
+        public id?: number,
+        public cName?: string
     ) {}
 }

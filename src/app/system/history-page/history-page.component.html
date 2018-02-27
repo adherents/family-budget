@@ -7,7 +7,10 @@
 <div *ngIf="isLoaded">
 	<fb-history-chart [data]="chartData"></fb-history-chart>
 
-	<fb-history-events></fb-history-events>
+	<fb-history-events 
+		[categories]="categories"
+		[events]="events"
+	></fb-history-events>
 	
 	<fb-history-filter></fb-history-filter>
 </div>
