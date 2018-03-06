@@ -8,7 +8,9 @@
 		</button>
 	</div>
 </div>
-<div *ngIf="!isLoaded" class="text-center">Loading ...</div>
+<div *ngIf="!isLoaded" class="text-center">
+	<fb-loader></fb-loader>
+</div>
 <div *ngIf="isLoaded">
 	<fb-history-chart [data]="chartData"></fb-history-chart>
 

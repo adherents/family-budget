@@ -10,7 +10,7 @@
 </div>
 <section class="section">
   <div class="row text-center" *ngIf="!isLoaded">
-    Loading ...
+    <fb-loader></fb-loader>
   </div>
   <div class="row" *ngIf="isLoaded">
       <fb-bill-card [bill]="bill" [currency]="currency"></fb-bill-card>
