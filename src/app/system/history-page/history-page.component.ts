@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs';
 import * as moment from 'moment';
+import { Title } from '@angular/platform-browser';
 
 import { CategoriesService } from '../shared/services/categories.service';
 import { EventsService } from '../shared/services/events.service';
@@ -15,8 +16,12 @@ import { FBEvent } from '../shared/models/event.model';
 })
 export class HistoryPageComponent implements OnInit, OnDestroy {
 
-  constructor(private categoriesService: CategoriesService,
-              private eventsService: EventsService) {
+  constructor(
+    private categoriesService: CategoriesService,
+    private eventsService: EventsService,
+    private title: Title
+  ) {
+    title.setTitle('История');
   }
 
   isLoaded = false;

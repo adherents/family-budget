@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
+import { Title } from '@angular/platform-browser';
 
 import { BillService } from '../shared/services/bill.service';
 import { Bill } from '../shared/models/bill.model';
@@ -17,7 +18,9 @@ export class BillPageComponent implements OnInit, OnDestroy {
   bill: Bill;
   isLoaded = false;
 
-  constructor(private billService: BillService) { }
+  constructor(private billService: BillService, private title: Title) {
+    title.setTitle('Счет');
+  }
 
   ngOnInit() {
     this.sub1 = Observable.combineLatest(

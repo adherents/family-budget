@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 import { Category } from '../shared/models/category.model';
 import { CategoriesService } from '../shared/services/categories.service';
@@ -12,7 +13,12 @@ export class RecordsPageComponent implements OnInit {
   categories: Category[] = [];
   isLoaded = false;
 
-  constructor(private categoriesService: CategoriesService) { }
+  constructor(
+    private categoriesService: CategoriesService, 
+    private title: Title
+  ) { 
+    title.setTitle('Запись');
+  }
 
   ngOnInit() {
     this.categoriesService.getCategories()

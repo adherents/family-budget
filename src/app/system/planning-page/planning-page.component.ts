@@ -8,6 +8,7 @@ import { EventsService } from '../shared/services/events.service';
 import { Bill } from '../shared/models/bill.model';
 import { Category } from '../shared/models/category.model';
 import { FBEvent } from '../shared/models/event.model';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'fb-planning-page',
@@ -22,9 +23,13 @@ export class PlanningPageComponent implements OnInit, OnDestroy {
   categories: Category[] = [];
   events: FBEvent[] = [];
 
-  constructor(private billService: BillService,
-              private categoriesService: CategoriesService,
-              private eventsService: EventsService) {
+  constructor(
+    private billService: BillService,
+    private categoriesService: CategoriesService,
+    private eventsService: EventsService,
+    private title: Title
+  ) {
+    title.setTitle('Планирование');
   }
 
   ngOnInit() {

@@ -6,6 +6,7 @@ import { EventsService } from '../../shared/services/events.service';
 import { CategoriesService } from '../../shared/services/categories.service';
 import { FBEvent } from '../../shared/models/event.model';
 import { Category } from '../../shared/models/category.model';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'fb-history-detail',
@@ -19,9 +20,13 @@ export class HistoryDetailComponent implements OnInit, OnDestroy {
   isLoaded = false;
   s1: Subscription;
 
-  constructor(private route: ActivatedRoute,
-              private eventsService: EventsService,
-              private categoriesService: CategoriesService) {
+  constructor(
+    private route: ActivatedRoute,
+    private eventsService: EventsService,
+    private categoriesService: CategoriesService,
+    private title: Title
+  ) {
+    title.setTitle('Детали события');
   }
 
   ngOnInit() {
