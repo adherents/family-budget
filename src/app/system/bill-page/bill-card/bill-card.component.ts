@@ -17,9 +17,9 @@ export class BillCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const { rates } = this.currency
-    this.dollar = rates['USD'] * this.bill.value;
-    this.euro = rates['EUR'] * this.bill.value;
+    const { rates } = this.currency;
+    this.dollar =  this.bill.value / rates['RUB'] * rates['USD'];
+    this.euro = this.bill.value / rates['RUB'];
   }
 
 }
