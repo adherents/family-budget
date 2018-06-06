@@ -41,7 +41,6 @@ export class AddEventComponent implements OnInit, OnDestroy {
 
   onSubmit(form: NgForm) {
     let {amount, description, category, type} = form.value;
-    if (amount < 0) amount *= -1;
 
     const event = new FBEvent(
       type, amount, +category, 

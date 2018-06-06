@@ -34,7 +34,6 @@ export class EditCategoryComponent implements OnInit, OnDestroy {
 
   onSubmit(form: NgForm) {
     let { name, amount } = form.value;
-    if(amount < 0) amount *= -1;
 
     const category = new Category(name, amount, +this.currentCategoryId);
 

@@ -8,7 +8,7 @@
     }
   ],
   "bill": {
-    "value": 105200,
+    "value": 92200,
     "currency": "RUB"
   },
   "categories": [
@@ -26,6 +26,11 @@
       "id": 3,
       "name": "Машина",
       "amount": 7000
+    },
+    {
+      "name": "Супруга",
+      "amount": 25000,
+      "id": 4
     }
   ],
   "events": [
@@ -100,6 +105,30 @@
       "date": "1.03.2018 14:51:09",
       "description": "Покупка еды.",
       "id": 9
+    },
+    {
+      "type": "outcome",
+      "amount": 6000,
+      "category": 4,
+      "date": "06.06.2018 15:31:15",
+      "description": "Купил летние босоножки.",
+      "id": 10
+    },
+    {
+      "type": "outcome",
+      "amount": 4500,
+      "category": 4,
+      "date": "06.06.2018 15:31:57",
+      "description": "Покупка летнего платья.",
+      "id": 11
+    },
+    {
+      "type": "outcome",
+      "amount": 2500,
+      "category": 4,
+      "date": "06.06.2018 15:33:16",
+      "description": "Купил фапочку)",
+      "id": 12
     }
   ]
 }
