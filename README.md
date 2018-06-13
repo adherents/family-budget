@@ -1,27 +1,5 @@
 # FamilyBudget
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Family Budget is an Angular5 web app that helps you to manage your incomes and outcomes. JSON Server was used as a REST API, because of its simplicity and fast setting up. After the user sign up and login he can start using this accounting app.
+This app consists of the four main pages. The first one, bill page, is displaying user's total amount of money in rubles, euro and dollars. Actual exchange rates are provided via fixer.io API. The second is a history page that demonstrates list of income/outcome events with friendly search engine and representative pie chart. Also here users can check events amount, date, category and description. Planning page, the third one, describes user's expenses categories with the specified money limits. On the last records page users can create categories and associated with them income/outcome events, additionally they might be edited.
+Feel free to use it! If so, clone or download this repository, run `npm install` to install all required dependencies and `npm run dev` script to run back-end server on `http://localhost:3000/` and web application on `http://localhost:4200/`.
